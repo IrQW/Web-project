@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Start" content="стартовая страница сайта">
+    <title>SportClub</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js.js"></script>
+<script src="7.js"></script>
+
+<div class="page">
+    <div class="top">
+            <div class="account">
+                <a class="login" href="account.html">
+                    <div class="inner">
+                        <div class="account_photo"></div>
+                        <div class="account_text">
+                            Личный кабинет
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="account">
+                <div class="inner">
+                    <ul>
+                        <li class="phone">
+                            <a href="tel:+7(123)456-78-90">+7(123)456-78-90</a>
+                        </li>
+                        <li class="worktime">
+                            <a>с 06:00 утра до 01:00 ночи</a>
+                        </li>
+                        <li class="mail">
+                            <a href="mailto:Qwer.trk@yandex.ru">Qwer.trk@yandex.ru</a>
+                        </li>
+                        <li class="phone">
+                            <a href="tel:1-23-45">1-23-45</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#club">Клубы</a>
+            <a href="#aura">Отзывы</a>
+            <a href="#tariffs">Тарифы</a>
+        </div>
+
+    <div id="navbar" onclick="openNav()"><i class="fa fa-bars"></i>Меню</div>
+
+    <main>
+        <section class="open" id="open">
+            <div class="open_photo">
+                <div class="open_name">
+                    SportClub
+                </div>
+                <div class="open_text1">
+                    Переступить порог спортивного клуба – уже подвиг. Свое тело — это единственное оружие, на которое ты всегда можешь положиться.
+                </div>
+                <div class="open_text2">
+                    Тренировка не приводит к идеальным результатам, она приводит к стабильным результатам.
+                </div>
+            </div>
+            <div class="facts">
+                <div class="icon1"></div>
+                <div class="icon2"></div>
+                <div class="icon3"></div>
+                <div class="text1">Лучшие тренажеры на районе</div>
+                <div class="text2">Дружелюбный персонал</div>
+                <div class="text3">С нами Вы достигните своих целей</div>
+            </div>
+        </section>
+        <section class="inf" id="club">
+            <div class="club_photo">
+                <div class="info_text">Клубы</div>
+            </div>
+            <div class="container">
+                <div class="content">
+
+                </div>
+            </div>
+        </section>
+        <section class="inf" id="aura">
+            <div class="aura_photo">
+                <div class="info_text">Отзывы</div>
+            </div>
+            <div class="container">
+
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <q>Потрясающее место для комфортных и продуктивных тренировок. Всегда чисто, есть всё необходимое для тренировок! </q>
+                        <p class="author">- Егор</p>
+                    </div>
+                    <div class="mySlides">
+                        <q>Отличный зал, много тренеров, классный персонал. Расположение удобное.</q>
+                        <p class="author">- Юлия</p>
+                    </div>
+                    <div class="mySlides">
+                        <q>Отличные студии для занятия спортом!! Обожаю все: от дизайна помещений, до персонала и самих тренировок, конечно же!</q>
+                        <p class="author">- Викктория Н.</p>
+                    </div>
+                    <div class="mySlides">
+                        <q>Отличные тренера, внимательны к ученикам! Красивый зал и приятные раздевалки. Вежливая администраторка, можно купить воды с витаминами, бесплатно поесть бананы .</q>
+                        <p class="author">- Ника</p>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="inf" id="tariffs">
+            <div class="tariffs_photo">
+                <div class="info_text">Тарифы</div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="tariffs_inf">
+                        <input id="pesontedan-one" type="checkbox" name="tariffs_inf">
+                        <label for="pesontedan-one">Пробный</label>
+                        <div class="pesontedan-content">
+                            <p>Первое описание</p>
+                        </div>
+                    </div>
+                    <div class="tariffs_inf">
+                        <input id="pesontedan-two" type="checkbox" name="tariffs_inf">
+                        <label for="pesontedan-two">Полный</label>
+                        <div class="pesontedan-content">
+                            <p>Второе описание</p>
+                        </div>
+                    </div>
+                    <div class="tariffs_inf">
+                        <input id="pesontedan-three" type="checkbox" name="tariffs_inf">
+                        <label for="pesontedan-three">Утренний</label>
+                        <div class="pesontedan-content">
+                            <p>Третье описание</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content">
+            <div class="form">
+                <form action="#" id="form" class="form_body">
+                    <h1 class="form_title">Обратная связь</h1>
+                    <ul class="contact_inf">
+                        <li class="contact__info-item">
+                            8 (123) 456-78-90
+                        </li>
+                        <li class="contact__info-item">
+                            12345@yandex.ru
+                        </li>
+                    </ul>
+                    <div class="form_item">
+                        <label for="formName" class="form_label">Имя*:</label>
+                        <input id="formName" type="text" name="name" class="form_input _req">
+                    </div>
+                    <div class="form_item">
+                        <label for="formEmail" class="form_label">E-mail*:</label>
+                        <input id="formEmail" type="text" name="email" class="form_input _req _email">
+                    </div>
+                    <div class="form_item">
+                        <label for="formMess" class="form_label">Сообщение:</label>
+                        <textarea id="formMess" name="message" class="form_input"></textarea>
+                    </div>
+                    <button type="submit" class="form_button">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="section-latency">
+            <div class="latency"></div>
+        </section>
+        <div class="footer_menu1">
+            <h3>Sport Club</h3>
+        </div>
+        <div class="footer_menu2">
+            <ul class="footer_menu ul">
+                <li class="footer_menu-item">
+                    <a href="vacancies.html">Вакансии</a>
+                </li>
+                <li class="footer_menu-item">
+                    <a href="promotion.html">Реклама</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_menu3">
+            <a href="#open">
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <defs>
+                        <path id="circle"
+                              d="
+                                    M 50, 50
+                                    m -37, 0
+                                    a 37,37 0 1,1 74,0
+                                    a 37,37 0 1,1 -74,0"/>
+                    </defs>
+                    <text font-size="15">
+                        <textPath xlink:href="#circle">
+                            Нажми, чтобы вернуться в начало...
+                        </textPath>
+                    </text>
+                </svg>
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
