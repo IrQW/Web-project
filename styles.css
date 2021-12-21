@@ -1,0 +1,416 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
+header{
+    left: 0;
+    width: 100%;
+    position: relative;
+    z-index: 91;
+    display: grid;
+    grid-template-areas:
+        "A A"
+        "B C";
+}
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: auto;
+    width: 1140px;
+}
+.title{
+    text-align: center;
+    font-family: Fantasy;
+    grid-area: A;
+    font-size: 54px;
+    margin: 0;
+}
+.sm{
+    grid-area: C;
+    text-align: left;
+    display: grid;
+    justify-items: end;
+}
+.nav{
+    grid-area: B;
+    font-size: 21px;
+}
+
+a{
+color: white;
+}
+a:visited{
+    color: #003B4A;
+}
+a:hover{
+    color: #803500
+}
+.top{
+    display: flex;
+}
+.account{
+    flex: auto;
+}
+.inner ul{
+    width: 100%;
+    display: table;
+}
+.inner li{
+    display: table-cell;
+}
+.login{
+    display: table-row;
+    vertical-align: top;
+    max-width: 100%;
+    color: white;
+}
+.inner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.account_photo{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 13px;
+    background: #A3876E;
+}
+.account_text{
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.inf{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.open{
+    position: relative;
+    width: 100%;
+    font-size: 35px;
+}
+.open_photo{
+    position: relative;
+    display: grid;
+    height: 778px;
+    width: 100%;
+    background: url(open.jpeg) no-repeat center;
+    background-size: cover;
+
+    grid-template-areas:
+    "one one one            .   .   ."
+    ".    .   .            two two two"
+    "three three three     two two two"
+    "three three three      .   .   .";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items : center;
+}
+.open_name{
+    color: #A3876E;
+    font-size: 7vw;
+    grid-area: one;
+    min-font-size: 35px;
+}
+.open_text1{
+    grid-area: two;
+}
+.open_text2{
+    grid-area: three;
+    text-align: right;
+}
+.facts{
+    position: relative;
+    margin-top: 21px;
+    display: grid;
+    min-height: 300px;
+    width: 100%;
+    grid-template-areas:
+    ".   .   one  . two .  three   .   ."
+    ".   .   A    .   B .    C     .   .";
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.icon1{
+    grid-area: one;
+    background: url("free-icon-exercise-5777844.png") no-repeat center;
+    background-size: contain;
+}
+.icon2{
+    grid-area: two;
+    background: url("free-icon-psychiatrist-5777964.png") no-repeat center;
+    background-size: contain;
+}
+.icon3{
+    grid-area: three;
+    background: url("free-icon-weight-loss-5778044.png") no-repeat center;
+    background-size: contain;
+}
+.text1{
+    grid-area: A;
+    font-size: 22px;
+    text-align: center;
+}
+.text2{
+    grid-area: B;
+    font-size: 22px;
+    text-align: center;
+}
+.text3{
+    grid-area: C;
+    font-size: 22px;
+    text-align: center;
+}
+
+.club_photo{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(https://i1.photo.2gis.com/images/branch/25/3518437227255994_8972.jpg) no-repeat center;
+    z-index: 50;
+    color: black;
+    background-size: cover;
+}
+.info_text{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    left: 12vw;
+    right:0;
+    margin: 0 auto;
+    top:50%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: whitesmoke;
+    font-size: 8vw;
+    text-shadow:
+        -0   -2px 0   rgba( 0, 0, 0, 0.15 ),
+        0   -2px 0   rgba( 0, 0, 0, 0.15 ),
+        -0    2px 0   rgba( 0, 0, 0, 0.15 ),
+        0    2px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px -0   0   rgba( 0, 0, 0, 0.15 ),
+        2px -0   0   rgba( 0, 0, 0, 0.15 ),
+        -2px  0   0   rgba( 0, 0, 0, 0.15 ),
+        2px  0   0   rgba( 0, 0, 0, 0.15 ),
+        -1px -2px 0   rgba( 0, 0, 0, 0.15 ),
+        1px -2px 0   rgba( 0, 0, 0, 0.15 ),
+        -1px  2px 0   rgba( 0, 0, 0, 0.15 ),
+        1px  2px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px -1px 0   rgba( 0, 0, 0, 0.15 ),
+        2px -1px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px  1px 0   rgba( 0, 0, 0, 0.15 ),
+        2px  1px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px -2px 0   rgba( 0, 0, 0, 0.15 ),
+        2px -2px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px  2px 0   rgba( 0, 0, 0, 0.15 ),
+        2px  2px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px -2px 0   rgba( 0, 0, 0, 0.15 ),
+        2px -2px 0   rgba( 0, 0, 0, 0.15 ),
+        -2px  2px 0   rgba( 0, 0, 0, 0.15 ),
+        2px  2px 0   rgba( 0, 0, 0, 0.15 );
+}
+.aura_photo{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(https://sportlifeclub.ru/assets/images/atmosphere/atmosphere-2-1440@2x.jpg) no-repeat center;
+    background-size: cover;
+}
+.tariffs_photo{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(https://fitnessinf.ru/wp-content/uploads/2020/05/common-1899.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.content {
+    width: 100%;
+    min-height: 200px;
+}
+
+@media handheld {
+    .content{
+        width: 100%;
+        min-height: 20vh;
+    }
+}
+
+.tariffs_inf {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1px;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+.tariffs_inf input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tariffs_inf label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    line-height: 3;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.pesontedan-content {
+    max-height: 0;
+    overflow: auto;
+    transition: max-height .50s;
+    color: #fffdfd;
+}
+
+.pesontedan-content p {
+    margin: 1em;
+}
+
+.tariffs_inf input:checked ~ .pesontedan-content {
+    max-height: 200vh;
+}
+
+.tariffs_inf label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 3em;
+    line-height: 3;
+    text-align: left;
+    -webkit-transition: all .50s;
+    -o-transition: all .50s;
+    transition: all .50s;
+}
+
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    background-color: #282a2f;
+    color: #8b94a0;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "A A B B"
+        ". . . C";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+.footer_menu1{
+    grid-area: A;
+}
+.footer_menu2{
+    grid-area: B;
+}
+.footer_menu3{
+    grid-area: C;
+    display: grid;
+    justify-items: end;
+}
+.footer_menu ul{
+color: whitesmoke;
+}
+.footer_menu-item{
+    color: whitesmoke;
+}
+.footer_menu-item a{
+    color: whitesmoke;
+}
+.footer_menu-item a:visited{
+    color: #003B4A;
+}
+.footer_menu-item a:hover{
+    color: #803500
+}
+
+.sidenav {
+    height: 100%; /* 100% Полный рост */
+    width: 0; /* 0 ширина - измените это с помощью JavaScript */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Оставайтесь на вершине */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Черный */
+    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+    padding-top: 60px; /* Поместите содержимое 60px сверху */
+    transition: 0.5s; /* 0.5 секунд эффект перехода, чтобы скользить в sidenav */
+}
+
+/* Ссылки в меню навигации */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Стиль содержимого страницы - Используйте это, если вы хотите переместить содержимое страницы вправо при открытии боковой навигации */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* На небольших экранах, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#navbar{
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #A3876E;
+    width: fit-content;
+    margin: 5px;
+}
+
+.fa{
+    margin-right: inherit;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
