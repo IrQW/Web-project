@@ -1,0 +1,145 @@
+.form {
+    max-width: 550px;
+    margin: 0 auto;
+    color: #fffdfd;
+    padding: 30px;
+}
+
+.form_body{
+    position: relative;
+}
+.contact_inf{
+    list-style-type: none;
+    padding: 0;
+}
+.contact__info-item{
+    padding: 20px;
+}
+.form_title{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.form_item{
+    margin: 0 0 20px 0;
+}
+.form_label{
+    font-size: 18px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+.form_input{
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    transition: all 0.5s ease 0s;
+}
+.form_input:focus{
+    box-shadow: 0 0 25px #A3876E;
+}
+.form_input._error{
+    box-shadow: 0 0 15px red;
+}
+textarea.form_input {
+    min-height: 120px;
+    resize: vertical;
+    padding: 20px;
+}
+.form_button{
+    width: 100%;
+    display: flex;
+    min-height: 60px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3876E;
+    color: #fffdfd;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #5d4d3e;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0;
+}
+.form_button:hover{
+    background-color: #7a6553;
+}
+.form_button:active{
+    top: 3px;
+    box-shadow: 0 2px 0 #5d4d3e;
+}
+
+/* Контейнер слайд-шоу */
+.slideshow-container {
+    position: relative;
+}
+
+/* Слайды */
+.mySlides {
+    display: none;
+    padding: 56px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+/* Вперед и назад кнопки */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Позиция "кнопки вперед" на право */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* Контейнер точки/пули/индикатора */
+.dot-container {
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+/* Точки/пули/индикаторы */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Добавить цвет фона для активной точки/круга */
+.active, .dot:hover {
+    background-color: #756352;
+}
+
+/* Добавить курсивный стиль шрифта для всех цитат */
+q {font-style: italic;}
+
+/* Добавить синий цвет для автора */
+.author {color: #A3876E;}
